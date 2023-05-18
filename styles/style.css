@@ -45,6 +45,17 @@ a{
     justify-content: space-between;
 }
 
+.phone{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000000;
+    opacity: 0.5;
+}
+
 @media screen  and (max-width: 1199px) {
     .header {
         max-width: 960px;
@@ -314,7 +325,6 @@ a{
 .double_block {
     background-color: #f7f7f7;
     margin: 25px 8px 24px;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
@@ -362,6 +372,19 @@ a{
     border-radius: 15px;
     justify-content: center;
     height: 300px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+.first:hover {
+    background: #dae3f3;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.first:hover .first_double_image{
+    animation:  0.2s 1 ease-in aga;
+    animation-fill-mode: forwards;
 }
 
 
@@ -385,6 +408,7 @@ a{
 }
 
 .second {
+    cursor: pointer;
     margin-left: 16px;
     width: 50%;
     padding: 50px 50px;
@@ -396,6 +420,29 @@ a{
     border-radius: 15px;
     justify-content: center;
     height: 300px;
+}
+
+.second:hover {
+    color: #000;
+    background: #dae3f3;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.second:hover .second_double_image{
+    animation:  0.2s 1 ease-in aga;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+    from {
+    top: 0;
+    }
+
+    to{
+        margin: -20px 0px;
+    }
 }
 
 @media screen and (max-width: 996px) {
@@ -478,6 +525,8 @@ a{
     height: 1105px;
     width: 240px;
 }
+
+
 
 @media screen and (max-width: 991px) {
     .first_double_image {

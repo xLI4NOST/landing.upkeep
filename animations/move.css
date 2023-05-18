@@ -49,3 +49,14 @@
         margin: 50px auto;
     }
 }
+
+
+@keyframes aga {
+    from{
+        margin: 0 ;
+    }
+    to{
+        margin: -20px 0;
+    }
+
+}
