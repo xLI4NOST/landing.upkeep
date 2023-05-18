@@ -36,3 +36,16 @@
         top:-220px
     }
 }
+
+@keyframes te {
+    to {
+        margin: -40px auto;
+    }
+}
+
+
+@keyframes te2 {
+    to {
+        margin: 50px auto;
+    }
+}

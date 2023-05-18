@@ -11,13 +11,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>upkeep</title>
 </head>
-<body>
+<body class="body">
+<header class="header">
+    <img class="header__icon" src="images/logo.svg">
+    <button class="header__button">Войти</button>
+</header>
 
 <div class="wrapper">
-    <header class="header">
-        <img class="header__icon" src="images/logo.png">
-        <button class="header__button">Войти</button>
-    </header>
     <section class="main_content">
         <div class="large_block">
             <div class="text_block">
@@ -39,7 +39,7 @@
         <div class="double_block">
             <div class="first">
                 <div class="text_block double">
-                    <h2 class="large_block__title double_title">Персональный домен</h2>
+                    <h2 class="large_block__title double_title">Имя вашего сайта</h2>
                     <p class="large_block__subtitle double_subtitle">Своё доменное имя, продвигающее твой бизнес,
                         которым легко делиться в любой соц. сети.</p>
                 </div>
@@ -48,8 +48,8 @@
                 </div>
             </div>
             <div class="second">
-                <div class="text_block">
-                    <h2 class="large_block__title double_title">Бесплатная
+                <div class="text_block double">
+                    <h2 class="large_block__title double_title duble_title_second">Бесплатная
                         техническая поддержка</h2>
                     <p class="large_block__subtitle double_subtitle">Специалисты всегда помогут тебе разобраться
                         в платформе.</p>
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="large_block">
+        <div class="large_block second_large_block">
             <div class="text_block">
                 <h2 class="large_block__title second_large_title">Адаптивность</h2>
                 <p class="large_block__subtitle second_large_subtitle">
@@ -135,6 +135,6 @@
 <script src="index.js"></script>
 </body>
 <footer class="footer">
-    <img src="/images/astana.png" class="footer__logo" alt="astanaHub">
+    <img src="/images/astana.svg" class="footer__logo" alt="astanaHub">
 </footer>
 </html>
