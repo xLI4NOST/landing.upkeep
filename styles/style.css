@@ -136,6 +136,14 @@
     }
 }
 
+@media screen and (max-width: 575px) {
+    .large_block{
+        min-height: 600px;
+        flex-wrap: wrap;
+    }
+    
+}
+
 
 .large_block:nth-child(3) {
     max-height: 400px;
@@ -521,6 +529,7 @@
 }
 
 .second_large_image {
+    background-color: transparent;
     overflow-clip-margin: 300px;
     position: absolute;
     top: -80px;
@@ -738,10 +747,42 @@
     height: 128px;
 }
 
+@media screen and (max-width: 555px) {
+    .first_double_image_bottom{
+        width: 200px;
+        height: 200px;
+        top: -50px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .crystal_block{
+        flex-wrap: nowrap;
+    }
+    
+}
+
+@media screen and (max-width: 556px) {
+    .crystal_block{
+        min-height: 400px;
+        flex-wrap: wrap;
+    }
+}
+
 .second_double_image_bottom {
     top: 20px;
     width: 182px;
     height: 280px;
+}
+@media screen and (max-width: 576px) {
+    .second_double_image_bottom{
+        right: -30px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .second_double_image_bottom{
+        top: -20px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -761,8 +802,57 @@
     }
 }
 
+.phone_block{
+    padding: 40px 40px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+@media screen and (max-width: 666px) {
+    .phone_block{
+        padding: 30px;
+        flex-wrap: nowrap;
+    }
+}
+
+.text_block_phone{
+}
+@media screen and (max-width: 576px){
+.text_block_phone{
+    min-width: 50%;
+}
+}
+
+.phone_block{
+
+}
+@media screen and (max-width: 666px) {
+    .phone_block{
+        max-width: 30000px;
+        max-height: 400px;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .phone_block{
+        min-width: 100px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and  (max-width: 555px){
+.phone_block{
+    min-height: 400px;
+    flex-wrap: wrap-reverse;
+}
+}
 
 
+.double_title_phone{
+    white-space: normal;
+}
 
 .application_block {
     display: flex;
