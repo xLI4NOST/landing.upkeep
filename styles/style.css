@@ -56,11 +56,11 @@ a{
     opacity: 0.5;
 }
 .phone_div{
-    margin-left: 30px;
     transform: translateY(-3px);
     align-self: center;
     display: flex;
     max-height: 14px;
+    min-width: 210px;
 }
 
 .logo_block{
@@ -104,7 +104,7 @@ a{
     height: 40px;
     left: 1160px;
     top: 40px;
-    background-color: #005FF9;
+    background-color: #e6ecf7;;
     border-radius: 10px;
     font-family: 'Roboto';
     font-style: normal;
@@ -114,6 +114,16 @@ a{
     text-align: center;
     color: #005FF9;
 }
+
+.header__link{
+    color: #005FF9;
+}
+
+.header__button:hover > .header__link{
+    color: #0042ad;
+}
+
+
 
 
 .main_content {
@@ -237,6 +247,10 @@ a{
     line-height: 100%;
     text-align: center;
     color: #FFFFFF;
+}
+
+.large_block_button:hover{
+    background: #0055e0
 }
 
 
@@ -401,7 +415,7 @@ a{
     transform: translateY(-5px);
 }
 
-.first:hover .first_double_image{
+.first_double_image:hover{
     animation:  0.2s 1 ease-in aga;
     animation-fill-mode: forwards;
 }
@@ -439,6 +453,7 @@ a{
     border-radius: 15px;
     justify-content: center;
     height: 300px;
+    transition: all 0.2s ease-in-out
 }
 
 .second:hover {
@@ -449,7 +464,7 @@ a{
     transform: translateY(-5px);
 }
 
-.second:hover .second_double_image{
+.second_double_image:hover{
     animation:  0.2s 1 ease-in aga;
     animation-fill-mode: forwards;
 }
@@ -749,6 +764,9 @@ a{
     color: #005FF9;
     background-color: #FFFFFF;
 }
+.large_block_button_blue:hover{
+    background: #f2f2f2;
+}
 
 
 .large_image_blue {
@@ -1019,6 +1037,9 @@ a{
     text-align: center;
     color: #FFFFFF;
 }
+.application_form__button:hover{
+    background: #0055e0
+}
 
 .button_active {
     background-color: rgba(0, 95, 249, .1);
@@ -1039,12 +1060,73 @@ a{
 
 .footer {
     display: flex;
-    max-width: 1110px;
-    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1168px;
+    margin: 0 auto 24px;
+    justify-content: space-between;
 }
+
+
+.footer_top{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+@media screen  and (max-width: 1199px) {
+    .footer {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_top{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .phone_div{
+        min-width: 50px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .footer{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer_top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .footer__logo{
+        max-width: 113px;
+    }
+
+}
+
 
 .footer__logo{
     transform: translateY(-3px);
+}
+@media screen and (max-width: 415px) {
+    .storeBlock{
+        padding: 0 5px;
+        display: flex;
+        gap: 30px;
+    }
 }
 
 
