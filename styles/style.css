@@ -46,7 +46,7 @@ a{
 }
 
 .phone{
-
+    align-self: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -55,6 +55,25 @@ a{
     color: #000000;
     opacity: 0.5;
 }
+.phone_div{
+    margin-left: 30px;
+    transform: translateY(-3px);
+    align-self: center;
+    display: flex;
+    max-height: 14px;
+}
+
+.logo_block{
+    display: flex;
+}
+
+@media screen and (max-width: 450px) {
+    .logo_block{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
 
 @media screen  and (max-width: 1199px) {
     .header {
@@ -1019,9 +1038,13 @@ a{
 }
 
 .footer {
+    display: flex;
     max-width: 1110px;
     margin: 0 auto;
 }
 
+.footer__logo{
+    transform: translateY(-3px);
+}
 
 
