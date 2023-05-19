@@ -863,8 +863,8 @@ a{
 
 
 .first_double_image_bottom {
-    top: 60px;
-    left: 5px;
+    top: 90px;
+    left: -5px;
     width: 190px;
     height: 128px;
 }
@@ -944,6 +944,7 @@ a{
 
 .phone_block{
     padding: 40px 40px;
+
     justify-content: space-between;
     flex-direction: row;
 
