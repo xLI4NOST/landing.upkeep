@@ -154,18 +154,39 @@ a {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .text_block{
+        max-width: 258px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .text_block {
+        max-width: 210px;
         display: block;
-        max-width: 900px;
         gap: 0;
         margin: 0;
     }
 }
 
+@media screen and (max-width: 575px) {
+    .text_block{
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .text_block{
+        min-width: 212px;
+        max-height: 288px;
+    }
+}
+    
 
 .large_block {
     margin: 0 8px;
+    position: relative;
     overflow: hidden;
     padding: 70px 70px;
     display: flex;
@@ -258,6 +279,7 @@ a {
     line-height: 100%;
     text-align: center;
     color: #FFFFFF;
+
 }
 
 .large_block_button:hover {
@@ -268,7 +290,6 @@ a {
 @media screen and (max-width: 649px) {
     .large_block:nth-child(3) {
         justify-content: start;
-        min-height: 500px;
         flex-wrap: wrap;
     }
 
@@ -297,61 +318,80 @@ a {
 
 .first_image {
     position: absolute;
-    top: -45px;
+    right: 230px;
+    top: 10px;
     z-index: 2;
     animation: te 3s ease-in-out infinite alternate
+}
+
+@media screen and (max-width: 1199px) {
+    .first_image{
+        right: 90px;
+    }
 }
 
 @media screen and (max-width: 991px) {
     .first_image {
         position: absolute;
-        top: 120px;
+        top: 10px;
         right: -35px;
         object-fit: none;
-        overflow-clip-margin: 200px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .first_image {
-        top: 50px;
-        left: 50%;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .first_image {
-        overflow-clip-margin: 300px;
-        top: -10px;
-        width: 100px;
-        height: 650px;
-        left: 150px;
-    }
-}
-
-@media screen and (max-width: 460px) {
-    .first_image {
-        top: 10px
     }
 }
 
 
-@media screen and (max-width: 397px ) {
+@media screen and (max-width: 621px) {
     .first_image {
-        left: 90px;
-        overflow-clip-margin: 10000px;
-        top: -40px;
-        height: 800px;
+        right: -80px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .first_image{
+        right: 120px;
+        top: 350px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .first_image{
+        right: 40px;
+    }
+}
+
+
+@media screen and (max-width: 451px) {
+    .first_image{
+        right: 10px;
+        top: 390px;
+    }
+}
+
+
+@media screen and (max-width: 395px) {
+    .first_image{
+        width: 330px;
+        max-height: 840px;
+        right: -30px;
+        top: 420px;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .first_image{
         object-fit: cover;
+        width: 280px;
+        top: 440px;
+        height: 748px;
     }
 }
+
 
 
 .second_image {
     position: absolute;
     z-index: 1;
-    top: -485px;
-    left: 35%;
+    top: -430px;
+    right: 80px;
     animation: te2 3s ease-in-out infinite alternate;
 }
 
@@ -627,6 +667,16 @@ a {
 }
 
 
+.second_text_block{
+    align-self: center;
+}
+
+@media screen and (max-width: 575px) {
+    .second_text_block{
+        width: 100%;
+    }
+}
+
 .second_large_subtitle {
     max-width: 374px;
     margin-bottom: 25px;
@@ -636,34 +686,41 @@ a {
     background-color: transparent;
     overflow-clip-margin: 300px;
     position: absolute;
-    top: -80px;
-    right: -80px;
+    top: -10px;
+    right: 60px;
     object-fit: cover;
     width: 700px;
     height: 620px;
 }
 
-@media screen and (max-width: 767px) {
-    .second_large_image {
-        top: -130px;
-        right: 1px;
+@media screen and (max-width: 1199px) {
+    .second_large_image{
+        right: -60px;
     }
 }
 
-@media screen and (max-width: 702px) {
-    .second_large_image {
-        right: -30px;
+@media screen and (max-width: 991px) {
+    .second_large_image{
+        top: -30px;
+        right: -180px;
     }
 }
 
-@media screen and (max-width: 649px) {
-    .second_large_image {
-        position: absolute;
-        top: -150px;
-        right: -130px;
+@media screen and (max-width: 575px) {
+    .second_large_image{
         width: 650px;
         height: 480px;
+        right: 90px;
+        top: 230px;
     }
+}
+
+@media screen and (max-width: 494px) {
+    .second_large_image{
+        right: -10px;
+    }
+}
+
 
     .second_large_title {
         text-align: start;
@@ -672,6 +729,7 @@ a {
     .second_large_subtitle {
         margin: 15px 0 0 0;
         text-align: start;
+        font-size: 15px;
     }
 
     .large_block_button_second {
@@ -679,14 +737,12 @@ a {
         align-self: start;
         max-width: 127px;
     }
-}
-
-@media screen and (max-width: 450px) {
-    .second_large_image {
-        left: 40px;
-        top: -150px;
+    
+@media screen and (max-width: 575px ) {
+    .second_large_block{
+        flex-direction: column;
+        min-height: 500px;
     }
-
 }
 
 @media screen and (max-width: 435px) {
@@ -729,8 +785,10 @@ a {
 }
 
 .large_block_blue {
+    justify-content: flex-end;
     margin-top: 24px;
     background-color: #005FF9;
+
 }
 
 @media screen and (max-width: 769px) {
@@ -812,41 +870,36 @@ a {
 
 .large_image_blue {
     position: absolute;
-    object-fit: cover;
-    overflow-clip-margin: 2000px;
-    top: -220px;
-    left: 20px;
-    width: 1000px;
-    height: 920px;
+    top: -200px;
+    left: -250px;
     animation: te 3s ease-in-out infinite alternate
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
     .large_image_blue {
-        top: -210px;
-        left: -10px;
+        object-fit: cover;
+        width: 1270px;
+        height: 1000px;
+        left: -200px;
+        top: -190px;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .large_image_blue {
-        top: -230px;
-        left: -20px;
+@media screen and (max-width: 618px) {
+    .large_image_blue{
+        top: -90px;
+        width: 900px;
+        height: 800px;
     }
 }
 
-@media screen  and (max-width: 666px) {
-    .large_image_blue {
-        left: -30px;
-    }
-}
 
 @media screen and (max-width: 575px) {
     .large_image_blue {
         max-width: 1000px;
         max-height: 600px;
         top: 230px;
-        left: -200px;
+        left: -100px;
     }
 }
 
@@ -855,7 +908,13 @@ a {
         max-width: 800px;
         max-height: 100px;
         top: 500px;
-        left: -250px;
+        left: -190px;
+    }
+}
+
+@media screen and (max-width: 442px ) {
+    .large_image_blue{
+        top: 600px;
     }
 }
 
