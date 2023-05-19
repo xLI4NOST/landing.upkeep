@@ -841,11 +841,24 @@ a{
     height: 128px;
 }
 
+@media screen and (max-width: 1171px) {
+    .first_double_image_bottom{
+        top: 90px;
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .first_double_image_bottom{
+        top: 70px;
+    }
+}
+
 @media screen and (max-width: 555px) {
     .first_double_image_bottom{
         width: 200px;
         height: 200px;
-        top: -50px;
+        top: 50px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -855,12 +868,15 @@ a{
     
 }
 
-@media screen and (max-width: 556px) {
+@media screen and (max-width: 555px) {
     .crystal_block{
         min-height: 400px;
         flex-wrap: wrap;
+        padding: 30px 30px;
     }
 }
+
+
 
 .second_double_image_bottom {
     top: 20px;
@@ -873,9 +889,11 @@ a{
     }
 }
 
-@media screen and (max-width: 552px) {
+
+
+@media screen and (max-width: 555px) {
     .second_double_image_bottom{
-        top: -20px;
+        top: -70px;
     }
 }
 
@@ -917,6 +935,12 @@ a{
 }
 }
 
+@media screen and (max-width: 555px) {
+    .text_block_phone{
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 666px) {
     .phone_block{
@@ -938,6 +962,8 @@ a{
 .phone_block{
     min-height: 400px;
     flex-wrap: wrap-reverse;
+    align-content: start;
+    justify-content: center;
 }
 }
 
@@ -946,12 +972,20 @@ a{
     white-space: normal;
 }
 
+@media screen and (max-width: 1199px) {
+    .double_title_phone{
+        font-size: 24px;
+    }
+}
+
 .application_block {
     display: flex;
     flex-direction: column;
     margin: 100px auto;
     max-width: 539px;
 }
+
+
 
 .application_title {
     font-family: 'Roboto';
@@ -967,6 +1001,11 @@ a{
     margin-top: 30px;
     display: flex;
     gap: 32px;
+}
+@media screen and (max-width: 557px) {
+    .application_icons_block{
+        gap: 10px
+    }
 }
 
 .application_icon {
