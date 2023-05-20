@@ -430,7 +430,8 @@ a {
 
 
 .double {
-    width: 305px;
+    justify-content: center;
+    max-width: 235px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -439,16 +440,35 @@ a {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .double{
+        justify-content: center;
+        max-width: 305px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .double{
+        max-width: 205px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .double {
         display: flex;
-        min-width: 444px;
+        max-width: 444px;
     }
 }
 
 @media screen and (max-width: 541px) {
     .double {
         align-self: start;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .double{
+        margin-top: 0;
     }
 }
 
@@ -525,7 +545,7 @@ a {
 
 @media screen and (max-width: 576px) {
     .second {
-        flex-wrap: wrap;
+        display: block;
     }
 }
 
@@ -573,6 +593,12 @@ a {
     max-width: 198px;
 }
 
+
+@media screen and (max-width: 991px) {
+    .double_subtitle{
+        max-width: 305px;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .double_subtitle {
@@ -642,7 +668,14 @@ a {
     }
 
     .duble_title_second {
+        font-size: 26px;
         white-space: pre-line;
+    }
+}
+
+@media screen and (max-width: 436px ) {
+    .duble_title_second{
+        font-size: 22px;
     }
 }
 
@@ -761,20 +794,6 @@ a {
 }
 
 
-
-@media screen and (max-width: 571px) {
-
-    .double_subtitle {
-        max-width: 235px;
-    }
-
-}
-
-@media screen and (max-width: 447px) {
-    .text_block {
-        margin-top: 15px;
-    }
-}
 
 .large_block_blue {
     justify-content: flex-end;
@@ -924,15 +943,11 @@ a {
 
 .first_double_image_bottom {
     top: 20px;
-    left: -5px;
+    left: 30px;
     width: 200px;
     height: 300px;
-    transition: 0.3s ease-in;
 }
 
-.first_double_image_bottom:hover{
-    transform: translateY(-20px);
-}
 
 
 @media screen and (max-width: 1199px) {
@@ -941,21 +956,15 @@ a {
     }
 }
 
-/*@media screen and (max-width: 1171px) {*/
-/*    .first_double_image_bottom {*/
-/*        top: 90px;*/
-/*        left: -10px;*/
-/*    }*/
-/*}*/
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .first_double_image_bottom{
+        left: 50px;
         width: 200px;
         height: 300px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 617px) {
     .first_double_image_bottom {
         left: -20px;
     }
@@ -963,47 +972,89 @@ a {
 
 @media screen and (max-width: 576px) {
     .first_double_image_bottom{
-        left: 70px;
-        top: 140px;
+        left: 10px;
     }
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 512px) {
     .first_double_image_bottom{
-        top: 160px;
+        left: -5px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .first_double_image_bottom{
+        top: 240px;
         left: 90px;
     }
 }
 
 @media screen and (max-width: 426px) {
     .first_double_image_bottom{
-        top: 200px;
+        top: 260px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .first_double_image_bottom{
+        top: 290px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .crystal_block{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .crystal_block{
+        display: flex;
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .crystal_block{
+        justify-content: flex-start;
+        flex-direction: column;
+        min-height: 400px;
     }
 }
 
 @media screen and (max-width: 380px) {
-    .first_double_image_bottom{
-        top: 250px;
+.crystal_block{
+    padding: 30px 30px;
+}
+}
+.text_block_crystal{
+    max-width: 235px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+    .text_block_crystal{
+        align-self: start;
     }
 }
 
-
-@media screen and (max-width: 576px) {
-    .crystal_block {
-        min-height: 400px;
-        display: block;
-    }
-
-}
-
-@media screen and (max-width: 555px) {
-    .crystal_block {
-        min-height: 400px;
-        flex-wrap: wrap;
-        padding: 30px 30px;
+@media screen and (max-width: 991px) {
+    .text_block_crystal{
+        max-width: 305px;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .text_block_crystal{
+        max-width: 500px;
+        align-self: start;
+    }
+}
 
 .second_double_image_bottom {
     top: 40px;
@@ -1012,11 +1063,10 @@ a {
     height: 280px;
 }
 
-
-@media screen and (max-width: 576px) {
-    .second_double_image_bottom {
-        right: 50px;
-        top: 120px;
+@media screen and (max-width: 500px) {
+    .second_double_image_bottom{
+        top:130px;
+        left: 60px;
     }
 }
 
@@ -1049,10 +1099,24 @@ a {
     flex-direction: row;
 }
 
+@media screen and (max-width: 991px) {
+    .phone_block{
+        padding: 50px 50px;
+    }
+}
+
 @media screen and (max-width: 666px) {
     .phone_block {
         padding: 30px;
         flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .phone_block{
+        padding: 40px 40px;
+        display: flex;
+        align-items: flex-start;
     }
 }
 
@@ -1063,11 +1127,34 @@ a {
 }
 
 .text_block_phone {
+    max-width: 235px;
 }
 
 @media screen and (max-width: 1199px) {
     .text_block_phone{
         margin-top: -30px;
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .text_block_phone{
+        max-width: 305px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text_block_phone{}
+}
+
+@media screen and (max-width: 650px) {
+    .text_block_phone{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text_block_phone{
         max-width: 230px;
     }
 }
@@ -1079,8 +1166,9 @@ a {
     }
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 500px) {
     .text_block_phone{
+        margin-top: 5px;
         max-width: 360px;
         min-width: 10px;
     }
@@ -1095,9 +1183,16 @@ a {
 
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 500px) {
     .phone_block{
+        flex-direction: column-reverse;
         min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .phone_block{
+        padding: 30px 30px;
     }
 }
 
@@ -1107,11 +1202,16 @@ a {
 
 .second_double_subtitle{
     max-width: 900px;
+    font-size: 14px;
+}
+
+.double_title_phone{
+    font-size: 28px;
 }
 
 @media screen and (max-width: 1199px) {
     .double_title_phone {
-        font-size: 20px;
+        font-size: 28px;
     }
 }
 
