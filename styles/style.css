@@ -588,17 +588,19 @@ a {
 .first_double_image {
     object-fit: cover;
     position: absolute;
-    margin: 0;
     top: -190px;
     right: -59px;
     height: 1105px;
     width: 300px;
     transition: 0.3s ease-in;
+
 }
 
 .first_double_image:hover{
-    transform: translateY(-20px);
+    animation: aga 0.3s ease-in;
+    animation-fill-mode: forwards;
 }
+
 
 
 @media screen and (max-width: 991px) {
@@ -633,7 +635,9 @@ a {
 }
 
 .second_double_image:hover{
-    transform: translateY(-20px);
+    animation: aga 0.3s ease-in;
+    animation-fill-mode: forwards;
+
 }
 
 @media screen and (max-width: 1199px) {
