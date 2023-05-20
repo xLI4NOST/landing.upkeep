@@ -63,8 +63,6 @@ const func = () =>{
         elem.removeAttribute('data-aos')
         elem.classList.add('hvr-float')
     })
-
-
 }
 
 const del =() =>{
