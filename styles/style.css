@@ -1035,15 +1035,10 @@ a {
 
 @media screen and (max-width: 448px) {
     .second_double_image{
-        top: 140px;
+        top: 180px;
     }
 }
 
-@media screen and (max-width: 334px) {
-    .second_double_image{
-        top: 170px;
-    }
-}
 
 @media screen and (max-width: 991px) {
 
