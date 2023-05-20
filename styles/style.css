@@ -108,6 +108,7 @@ a {
 }
 
 .header__icon {
+    cursor: pointer;
     max-width: 127px;
     max-height: 30px;
 }
@@ -592,13 +593,6 @@ a {
     right: -59px;
     height: 1105px;
     width: 300px;
-    transition: 0.3s ease-in;
-
-}
-
-.first_double_image:hover{
-    animation: aga 0.3s ease-in;
-    animation-fill-mode: forwards;
 }
 
 
@@ -634,11 +628,6 @@ a {
     transition: 0.3s ease-in;
 }
 
-.second_double_image:hover{
-    animation: aga 0.3s ease-in;
-    animation-fill-mode: forwards;
-
-}
 
 @media screen and (max-width: 1199px) {
     .second_double_image{
@@ -1016,19 +1005,13 @@ a {
 }
 
 
-
-
 .second_double_image_bottom {
     top: 40px;
     right: 7px;
     width: 182px;
     height: 280px;
-    transition: 0.3s ease-in;
 }
 
-.second_double_image_bottom:hover{
-    transform: translateY(-20px);
-}
 
 @media screen and (max-width: 576px) {
     .second_double_image_bottom {

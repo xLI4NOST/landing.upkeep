@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll('.application_icon')
 const inputElem = document.querySelector('.application_input')
 const formElem = document.querySelector('.application_form')
 const submitButton = document.querySelector('.application_form__button')
+const phoneHover = document.querySelectorAll('.anim')
 let clickButton= ""
 const defaultState = ()=>{
     buttons[0].classList.add('button_active')
@@ -51,6 +52,39 @@ const handleSubmit =(event)=>{
         .then (res=>checkResponse(res))
 
 }
+
+
+
+
+const func = () =>{
+    phoneHover.forEach((elem)=>{
+        elem.classList.remove("aos-init")
+        elem.classList.remove('aos-animate')
+        elem.removeAttribute('data-aos')
+        elem.classList.add('hvr-float')
+    })
+
+
+}
+
+const del =() =>{
+    phoneHover.forEach((elem)=>{
+        setTimeout(()=>{
+            elem.classList.add("aos-init")
+            elem.classList.add('aos-animate')
+            elem.setAttribute('data-aos', 'fade-up')
+            elem.classList.remove('hvr-float')
+        },300)
+
+    })
+
+
+}
+
+phoneHover.forEach((elem)=>{
+    elem.addEventListener("mouseover", func)
+    elem.addEventListener("mouseout", del)
+})
 
 
 submitButton.addEventListener('click', handleSubmit)

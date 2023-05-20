@@ -16,6 +16,11 @@ classlist-polyfill@^1.0.3:
   resolved "https://registry.npmjs.org/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz"
   integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
 
+hover.css@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.npmjs.org/hover.css/-/hover.css-2.3.2.tgz"
+  integrity sha512-eXch700vfcoSSAcEcU154lTHBYQy2cjGT+yJZtkKWxASBBiPVkqYOdMAa0sz4cYj2YIrl1FRE2s5O4EgOaIpig==
+
 lodash.debounce@^4.0.6:
   version "4.0.8"
   resolved "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
