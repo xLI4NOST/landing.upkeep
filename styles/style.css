@@ -47,6 +47,7 @@ a {
 }
 
 .phone {
+    min-width: 120px;
     align-self: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -59,13 +60,13 @@ a {
 
 .phone_div {
     transform: translateY(-3px);
-    align-self: center;
     display: flex;
+    justify-content: center;
     gap: 7px;
-    min-width: 210px;
 }
 
-.phone_div:nth-child(2) {
+.phone_div_bottom {
+    display: flex;
     margin-top: 8px;
     align-self: start;
     margin-left: 30px;
@@ -79,6 +80,7 @@ a {
 
 .logo_block {
     display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 450px) {
@@ -1104,6 +1106,12 @@ a {
     .second_double_image_bottom{
         right: 10px;
     }
+}
+
+@media screen and (max-width: 514px) {
+.second_double_image_bottom{
+    right: 0;
+}
 }
 
 @media screen and (max-width: 500px) {

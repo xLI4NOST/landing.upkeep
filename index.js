@@ -44,10 +44,10 @@ const checkButtons =()=>{
     if(active){
         active.forEach(elem=>{
             clickButton=elem.textContent
-            if(clickButton=='Email'){
+            if(clickButton ==='Email'){
                 inputElem.setAttribute('type', 'email')
             }
-            if (clickButton !='Email'){
+            if (clickButton !== 'Email'){
                 inputElem.setAttribute('type', 'text')
             }
         })
@@ -76,7 +76,7 @@ const handleSubmit =(evt)=>{
     })
 
         .then (res=>{checkResponse(res)
-            if (res.status == 200){
+            if (res.status === 200){
                 alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.')
             }
         }
