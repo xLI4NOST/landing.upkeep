@@ -65,6 +65,7 @@ a {
 
 .phone_div_bottom {
     display: flex;
+    gap: 7px;
     margin-top: 8px;
     align-self: start;
     margin-left: 30px;
