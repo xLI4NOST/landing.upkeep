@@ -59,9 +59,7 @@ a {
 }
 
 .phone_div {
-    transform: translateY(-3px);
     display: flex;
-    justify-content: center;
     gap: 7px;
 }
 
@@ -80,6 +78,7 @@ a {
 
 .logo_block {
     display: flex;
+    gap: 10px;
     align-items: center;
 }
 
@@ -1421,6 +1420,7 @@ a {
 
 .footer_top {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 30px;
 }
