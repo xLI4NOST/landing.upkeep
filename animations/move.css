@@ -1,42 +1,3 @@
-@keyframes move-first {
-    from {
-        top: 16px
-    }
-    50% {
-        top: 50px;
-    }
-    to {
-        top: 16px;
-    }
-}
-
-@keyframes move-second {
-    from {
-        top: -100%
-    }
-    50% {
-        top: -85%
-    }
-    to {
-        top: -100%
-    }
-}
-
-
-@keyframes move_qr {
-    from {
-        top: -220px;
-    }
-
-    50% {
-        top: -180px
-    }
-
-    to {
-        top: -220px
-    }
-}
-
 @keyframes te {
     to {
         transform: translateY(-20px) translateZ(0) translateX(0);
@@ -51,15 +12,6 @@
 }
 
 
-@keyframes aga {
-    from {
-        margin: 0;
-    }
-    to {
-        margin: -20px 0;
-    }
-
-}
 
 @keyframes spin {
     1% {

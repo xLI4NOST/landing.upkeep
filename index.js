@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll('.application_icon')
 const inputElem = document.querySelector('.application_input')
 const formElem = document.querySelector('.application_form')
 const submitButton = document.querySelector('.application_form__button')
+const applicationForm = document.querySelector('.application_form')
 const phoneHover = document.querySelectorAll('.anim')
 const loading = document.querySelector('.load')
 
@@ -34,22 +35,36 @@ for (let button of buttons){
 
 const checkResponse =(res)=>{
     if (res.ok){
-        alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.')
+    console.log(res)
     }
 }
 
-const handleSubmit =(event)=>{
-    event.preventDefault()
-    setLoading(true)
-    const contact = inputElem.value
+const checkButtons =()=>{
     const active = document.querySelectorAll('.application_icon.button_active')
     if(active){
         active.forEach(elem=>{
             clickButton=elem.textContent
+            if(clickButton=='Email'){
+                inputElem.setAttribute('type', 'email')
+            }
+            if (clickButton !='Email'){
+                inputElem.setAttribute('type', 'text')
+            }
         })
     }
+}
 
-    fetch('https://upkeep.kz/api/v1/call', {
+buttons.forEach((elem)=>{
+    elem.addEventListener('click', checkButtons)
+})
+
+const handleSubmit =(evt)=>{
+    evt.preventDefault()
+    const contact = inputElem.value
+
+    setLoading(true)
+
+    fetch('https://upkeep.kz/api/v1/call1', {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -60,13 +75,17 @@ const handleSubmit =(event)=>{
         })
     })
 
+        .then (res=>{checkResponse(res)
+            if (res.status == 200){
+                alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.')
+            }
+        }
 
-        .then (res=>checkResponse(res)
         )
-        .catch((res)=>
-            checkResponse(res)
+        .catch((err)=>
+            alert('Произошла ошибка, проверьте подключение к интернету или повторите попытку позднее')
         )
-        .finally(()=>{
+        .finally((res)=>{
             inputElem.value=""
             setLoading(false)
         })
@@ -102,4 +121,4 @@ phoneHover.forEach((elem)=>{
 })
 
 
-submitButton.addEventListener('click', handleSubmit)
+applicationForm.addEventListener('submit', handleSubmit)
