@@ -2,7 +2,7 @@
     from {
         top: 16px
     }
-    50%{
+    50% {
         top: 50px;
     }
     to {
@@ -11,52 +11,61 @@
 }
 
 @keyframes move-second {
-    from{
-        top:-100%
+    from {
+        top: -100%
     }
-    50%{
-        top:-85%
+    50% {
+        top: -85%
     }
-    to{
-        top:-100%
+    to {
+        top: -100%
     }
 }
 
 
 @keyframes move_qr {
-    from{
+    from {
         top: -220px;
     }
 
-    50%{
-        top:-180px
+    50% {
+        top: -180px
     }
 
-    to{
-        top:-220px
+    to {
+        top: -220px
     }
 }
 
 @keyframes te {
     to {
-        margin: -40px auto;
+        transform: translateY(-20px) translateZ(0) translateX(0);
     }
 }
 
 
 @keyframes te2 {
     to {
-        margin: 50px auto;
+        transform: translateY(50px) translateZ(0) translateX(0);
     }
 }
 
 
 @keyframes aga {
-    from{
-        margin: 0 ;
+    from {
+        margin: 0;
     }
-    to{
+    to {
         margin: -20px 0;
     }
 
+}
+
+@keyframes spin {
+    1% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

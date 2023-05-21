@@ -3,12 +3,22 @@ const inputElem = document.querySelector('.application_input')
 const formElem = document.querySelector('.application_form')
 const submitButton = document.querySelector('.application_form__button')
 const phoneHover = document.querySelectorAll('.anim')
+const loading = document.querySelector('.load')
+
 let clickButton= ""
 const defaultState = ()=>{
     buttons[0].classList.add('button_active')
     let clickButton= 'WhatsApp'
 }
 
+const setLoading =(callback)=>{
+    if (callback === true){
+        loading.classList.add('loader-active')
+    }
+    if(callback=== false){
+        loading.classList.remove('loader-active')
+    }
+}
 
 
 for (let button of buttons){
@@ -30,6 +40,7 @@ const checkResponse =(res)=>{
 
 const handleSubmit =(event)=>{
     event.preventDefault()
+    setLoading(true)
     const contact = inputElem.value
     const active = document.querySelectorAll('.application_icon.button_active')
     if(active){
@@ -38,7 +49,7 @@ const handleSubmit =(event)=>{
         })
     }
 
-    fetch('https://upkeep.kz/api/v1/call', {
+    fetch('https://upkeep.kz/api/v1/call1', {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -49,12 +60,18 @@ const handleSubmit =(event)=>{
         })
     })
 
-        .then (res=>checkResponse(res))
+
+        .then (res=>checkResponse(res)
+        )
+        .catch((res)=>
+            checkResponse(res)
+        )
+        .finally(()=>{
+            inputElem.value=""
+            setLoading(false)
+        })
 
 }
-
-
-
 
 const func = () =>{
     phoneHover.forEach((elem)=>{
