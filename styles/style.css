@@ -228,7 +228,7 @@ a {
 
 }
 
-@media screen and (max-width: 37px) {
+@media screen and (max-width: 375px) {
     .large_block{
         padding: 35px 35px;
     }
@@ -514,9 +514,9 @@ a {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .first {
-        padding: 30px 30px;
+        padding: 35px 35px;
     }
 }
 
@@ -557,9 +557,9 @@ a {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     .second {
-        padding: 30px 30px;
+        padding: 35px 35px;
     }
 }
 
@@ -1041,9 +1041,9 @@ a {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
 .crystal_block{
-    padding: 30px 30px;
+    padding: 35px 35px;
 }
 }
 .text_block_crystal{
@@ -1157,6 +1157,12 @@ a {
 @media screen and (max-width: 476px) {
     .phone_block{
         display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .phone_block{
+        padding: 35px 35px !important;
     }
 }
 
