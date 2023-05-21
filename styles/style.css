@@ -223,6 +223,7 @@ a {
 
 @media screen and (max-width: 575px) {
     .large_block {
+        padding: 35px 35px;
         min-height: 600px;
         flex-wrap: wrap;
     }
@@ -511,6 +512,7 @@ a {
 
 @media screen and (max-width: 576px) {
     .first {
+        padding: 35px 35px;
         display: block;
     }
 }
@@ -554,6 +556,7 @@ a {
 
 @media screen and (max-width: 576px) {
     .second {
+        padding: 35px 35px;
         display: block;
     }
 }
@@ -701,6 +704,12 @@ a {
     }
 }
 
+@media screen and (max-width: 370px) {
+    .second_double_image{
+        min-width: 338px;
+    }
+}
+
 
 .second_text_block{
     align-self: center;
@@ -831,6 +840,7 @@ a {
 
 @media screen and (max-width: 575px) {
     .large_block_blue {
+        padding: 35px 35px;
         flex-direction: column-reverse;
         min-height: 600px;
         display: block;
@@ -1039,7 +1049,7 @@ a {
 @media screen and (max-width: 576px) {
     .crystal_block{
         display: flex;
-        padding: 40px 40px;
+        padding: 35px 35px;
     }
 }
 
@@ -1164,7 +1174,7 @@ a {
 
 @media screen and (max-width: 576px) {
     .phone_block{
-        padding: 40px 40px;
+        padding: 35px 35px;
         display: flex;
         align-items: flex-start;
     }

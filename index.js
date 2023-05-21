@@ -61,9 +61,7 @@ buttons.forEach((elem)=>{
 const handleSubmit =(evt)=>{
     evt.preventDefault()
     const contact = inputElem.value
-
     setLoading(true)
-
     fetch('https://upkeep.kz/api/v1/call', {
         method:'POST',
         headers: {
