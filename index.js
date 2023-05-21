@@ -64,7 +64,7 @@ const handleSubmit =(evt)=>{
 
     setLoading(true)
 
-    fetch('https://upkeep.kz/api/v1/call1', {
+    fetch('https://upkeep.kz/api/v1/call', {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
