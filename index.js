@@ -49,7 +49,7 @@ const handleSubmit =(event)=>{
         })
     }
 
-    fetch('https://upkeep.kz/api/v1/call1', {
+    fetch('https://upkeep.kz/api/v1/call', {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
