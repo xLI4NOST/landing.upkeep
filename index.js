@@ -6,6 +6,9 @@ const applicationForm = document.querySelector('.application_form')
 const phoneHover = document.querySelectorAll('.anim')
 const loading = document.querySelector('.load')
 
+
+
+
 let clickButton= ""
 const defaultState = ()=>{
     buttons[0].classList.add('button_active')

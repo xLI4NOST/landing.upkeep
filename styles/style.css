@@ -46,6 +46,21 @@ a {
     justify-content: space-between;
 }
 
+.language_block{
+    cursor: pointer;
+    display: flex;
+    gap: 7px;
+}
+
+.language_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .phone {
     min-width: 120px;
     align-self: center;
