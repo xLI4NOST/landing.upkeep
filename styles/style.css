@@ -61,6 +61,12 @@ a {
     color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 580px) {
+    .language_text{
+        display: none;
+    }
+}
+
 .phone {
     min-width: 120px;
     align-self: center;
