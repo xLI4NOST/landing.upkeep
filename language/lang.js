@@ -9,8 +9,13 @@ const allLang = ['ru','kz']
 const titels = document.querySelectorAll('.large_block__title')
 const subTitles = document.querySelectorAll('.large_block__subtitle')
 const applicationTitle = document.querySelector('.application_title')
+const inputPlaceholder = document.querySelector ('.application_input')
 
-let lang = 'ru'
+
+
+let lang = navigator.language.substring(3).toLowerCase()
+
+console.log(lang)
 location.href = window.location.pathname + '#' + lang
 
 const changeLangUrl = () => {
@@ -30,26 +35,6 @@ const changeLangUrl = () => {
 
 }
 
-// const changeLangUrl = () =>{
-//     if (hash === 'ru'){
-//         langImg.src = '../images/vector/russianLang.svg'
-//         langText.textContent= 'На русском'
-//         let lang = 'kz'
-//         location.href = window.location.pathname + '#' + lang
-//         // changeLang()
-//     }
-//     if(hash==='kz'){
-//         langImg.src = '../images/vector/kzLang.svg'
-//         langText.textContent= 'Қазақ тілінде'
-//         let lang = 'ru'
-//         location.href = window.location.pathname + '#' + lang
-//         titels.innerHTML = langState
-//         // changeLang()
-//     }
-// }
-
-
-
 
 const transliteTitle = (hash) =>{
     const translationsTitle = langArr['large_block_title'][hash];
@@ -68,6 +53,7 @@ const transliteTitle = (hash) =>{
         buttonsTl[x].innerHTML = translateButtons[x]
     }
     applicationTitle.innerHTML = langArr ['application_title'] [hash]
+    inputPlaceholder.placeholder = langArr ['application_input'] [hash]
 
 }
 
