@@ -15,7 +15,6 @@ const inputPlaceholder = document.querySelector ('.application_input')
 
 let lang = navigator.language.substring(3).toLowerCase()
 
-console.log(lang)
 location.href = window.location.pathname + '#' + lang
 
 const changeLangUrl = () => {
@@ -56,6 +55,22 @@ const transliteTitle = (hash) =>{
     inputPlaceholder.placeholder = langArr ['application_input'] [hash]
 
 }
+
+const defaultLang = (lang) =>{
+    if(lang === 'kz'){
+        langText.innerHTML= 'На русском'
+        location.href = window.location.pathname + '#' + lang
+        langImg.src = '/images/vector/russianLang.svg'
+        transliteTitle(lang)
+    } else {
+        lang= 'ru'
+        langText.innerHTML= 'Қазақ тілінде'
+        location.href = window.location.pathname + '#' + lang
+        langImg.src = '/images/vector/kzLang.svg'
+        transliteTitle(lang)
+    }
+}
+defaultLang()
 
 
 
