@@ -300,8 +300,11 @@ a {
 
 
 .large_block_button {
+    display: block;
+    padding: 13px;
     margin-top: 25px;
-    width: 183px;
+    min-width: 183px;
+    max-width: 183px;
     min-height: 40px;
     background-color: #005FF9;
     border-radius: 10px;

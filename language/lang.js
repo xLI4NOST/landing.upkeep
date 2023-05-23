@@ -12,8 +12,9 @@ const applicationTitle = document.querySelector('.application_title')
 const inputPlaceholder = document.querySelector ('.application_input')
 
 
-
 let lang = navigator.language.substring(3).toLowerCase()
+
+console.log(navigator.language.substring(3).toLowerCase())
 
 location.href = window.location.pathname + '#' + lang
 
@@ -53,7 +54,7 @@ const transliteTitle = (hash) =>{
     }
     applicationTitle.innerHTML = langArr ['application_title'] [hash]
     inputPlaceholder.placeholder = langArr ['application_input'] [hash]
-
+    document.documentElement.setAttribute('lang', `${hash}`)
 }
 
 const defaultLang = (lang) =>{
@@ -63,14 +64,13 @@ const defaultLang = (lang) =>{
         langImg.src = '/images/vector/russianLang.svg'
         transliteTitle(lang)
     } else {
-        lang= 'ru'
         langText.innerHTML= 'Қазақ тілінде'
         location.href = window.location.pathname + '#' + lang
         langImg.src = '/images/vector/kzLang.svg'
         transliteTitle(lang)
     }
 }
-defaultLang()
+defaultLang(lang)
 
 
 
