@@ -77,12 +77,12 @@ const defaultLang = (lang) =>{
     if(lang === 'kz'){
         langText.innerHTML= 'На русском'
         location.href = window.location.pathname + '#' + lang
-        langImg.src = '/images/vector/russianLang.svg'
+        langImg.src = 'images/vector/russianLang.svg'
         transliteTitle(lang)
     } else {
         langText.innerHTML= 'Қазақ тілінде'
         location.href = window.location.pathname + '#' + lang
-        langImg.src = '/images/vector/kzLang.svg'
+        langImg.src = 'images/vector/kzLang.svg'
         transliteTitle(lang)
     }
 }
