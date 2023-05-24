@@ -14,36 +14,9 @@ const krystal = document.querySelector('.text_block_crystal')
 const krystalImg = document.querySelector('.second_double_image_bottom')
 const textBlockPhone = document.querySelector('.text_block_phone')
 const textBlockBlue = document.querySelector('.text_block_blue')
-
-// const chechResponsive =()=>{
-//     if(lang === 'kz'){
-//         if(window.innerWidth <= 1199){
-//             textBlockBlue.style.marginTop='-10px'
-//         }
-//
-//         if (window.innerWidth >= 991){
-//             textBlock.style.maxWidth= '378px'
-//         }
-//
-//         if(window.innerWidth <= 631){
-//             krystal.style.top = '80px'
-//             krystal.style.right = '0'
-//         }
-//
-//         if (window.innerWidth <= 650){
-//             textBlock.style.maxWidth = '258px'
-//         }
-//
-//         if (window.innerWidth <= 576){
-//             textBlock.style.maxWidth = '1000px'
-//         }
-//
-//         if(window.innerWidth <= 500){
-//             krystal.style.top = '210px'
-//         }
-//     }
-// }
-
+const description = document.querySelector('meta[name="description"]')
+const keyWords = document.querySelector('meta[name="keywords"]')
+console.log(keyWords)
 
 let lang = navigator.language.substring(3).toLowerCase()
 // chechResponsive(lang)
@@ -73,7 +46,6 @@ const changeLangUrl = () => {
         krystal.classList.add ('text_block_krystal_kz')
         krystalImg.classList.add ('second_double_image_bottom_kz')
         textBlockPhone.classList.add('text_block_phone_kz')
-        // chechResponsive(lang)
     }
 }
 
@@ -97,6 +69,8 @@ const transliteTitle = (hash) =>{
     inputPlaceholder.placeholder = langArr ['application_input'] [hash]
     document.documentElement.setAttribute('lang', `${hash}`)
     document.querySelector('title').innerHTML = langArr ['title'] [hash]
+    description.content = langArr ['description'] [hash]
+    keyWords.content = langArr ['keywords'] [hash]
 }
 
 const defaultLang = (lang) =>{
@@ -113,19 +87,9 @@ const defaultLang = (lang) =>{
     }
 }
 
-// window.addEventListener('resize', chechResponsive)
 
 defaultLang(lang)
 
 
-
-// const changeLang = () =>{
-//     if(!allLang.includes(hash)){
-//         location.href = window.location.pathname + '#ru'
-//         location.reload()
-//     }
-//     transliteTitle(hash)
-//
-// }
 
 languageBlock.addEventListener('click', changeLangUrl)
