@@ -19,7 +19,7 @@ const keyWords = document.querySelector('meta[name="keywords"]')
 console.log(keyWords)
 
 let lang = navigator.language.substring(3).toLowerCase()
-// chechResponsive(lang)
+
 
 console.log(navigator.language.substring(3).toLowerCase())
 
@@ -30,7 +30,7 @@ const changeLangUrl = () => {
         lang= 'ru'
         langText.innerHTML= 'Қазақ тілінде'
         location.href = window.location.pathname + '#' + lang
-        langImg.src = '/images/vector/kzLang.svg'
+        langImg.src = 'images/vector/kzLang.svg'
         transliteTitle(lang)
         textBlockBlue.classList.remove('text_block_blue_kz')
         krystal.classList.remove ('text_block_krystal_kz')
@@ -40,7 +40,7 @@ const changeLangUrl = () => {
         lang='kz'
         langText.innerHTML= 'На русском'
         location.href = window.location.pathname + '#' + lang
-        langImg.src = '/images/vector/russianLang.svg'
+        langImg.src = 'images/vector/russianLang.svg'
         transliteTitle(lang)
         textBlockBlue.classList.add('text_block_blue_kz')
         krystal.classList.add ('text_block_krystal_kz')
