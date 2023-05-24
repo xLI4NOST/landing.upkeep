@@ -10,33 +10,43 @@ const titels = document.querySelectorAll('.large_block__title')
 const subTitles = document.querySelectorAll('.large_block__subtitle')
 const applicationTitle = document.querySelector('.application_title')
 const inputPlaceholder = document.querySelector ('.application_input')
-const krystal = document.querySelector('.second_double_image_bottom')
-const textBlock = document.querySelector('.fx')
+const krystal = document.querySelector('.text_block_crystal')
+const krystalImg = document.querySelector('.second_double_image_bottom')
+const textBlockPhone = document.querySelector('.text_block_phone')
+const textBlockBlue = document.querySelector('.text_block_blue')
 
-const chechResponsive =()=>{
-    if(lang === 'kz'){
-        if(window.innerWidth <= 631){
-            krystal.style.top = '80px'
-            krystal.style.right = '0'
-        }
-
-        if (window.innerWidth <= 650){
-            textBlock.style.maxWidth = '258px'
-        }
-
-        if (window.innerWidth <= 576){
-            textBlock.style.maxWidth = '1000px'
-        }
-
-        if(window.innerWidth <= 500){
-            krystal.style.top = '210px'
-        }
-    }
-}
+// const chechResponsive =()=>{
+//     if(lang === 'kz'){
+//         if(window.innerWidth <= 1199){
+//             textBlockBlue.style.marginTop='-10px'
+//         }
+//
+//         if (window.innerWidth >= 991){
+//             textBlock.style.maxWidth= '378px'
+//         }
+//
+//         if(window.innerWidth <= 631){
+//             krystal.style.top = '80px'
+//             krystal.style.right = '0'
+//         }
+//
+//         if (window.innerWidth <= 650){
+//             textBlock.style.maxWidth = '258px'
+//         }
+//
+//         if (window.innerWidth <= 576){
+//             textBlock.style.maxWidth = '1000px'
+//         }
+//
+//         if(window.innerWidth <= 500){
+//             krystal.style.top = '210px'
+//         }
+//     }
+// }
 
 
 let lang = navigator.language.substring(3).toLowerCase()
-chechResponsive(lang)
+// chechResponsive(lang)
 
 console.log(navigator.language.substring(3).toLowerCase())
 
@@ -49,14 +59,21 @@ const changeLangUrl = () => {
         location.href = window.location.pathname + '#' + lang
         langImg.src = '/images/vector/kzLang.svg'
         transliteTitle(lang)
-        chechResponsive(lang)
+        textBlockBlue.classList.remove('text_block_blue_kz')
+        krystal.classList.remove ('text_block_krystal_kz')
+        krystal.classList.remove ('.second_double_image_bottom_kz')
+        textBlockPhone.classList.remove('text_block_phone_kz')
     }else{
         lang='kz'
         langText.innerHTML= 'На русском'
         location.href = window.location.pathname + '#' + lang
         langImg.src = '/images/vector/russianLang.svg'
         transliteTitle(lang)
-        chechResponsive(lang)
+        textBlockBlue.classList.add('text_block_blue_kz')
+        krystal.classList.add ('text_block_krystal_kz')
+        krystalImg.classList.add ('second_double_image_bottom_kz')
+        textBlockPhone.classList.add('text_block_phone_kz')
+        // chechResponsive(lang)
     }
 }
 
@@ -96,7 +113,7 @@ const defaultLang = (lang) =>{
     }
 }
 
-window.addEventListener('resize', chechResponsive)
+// window.addEventListener('resize', chechResponsive)
 
 defaultLang(lang)
 
