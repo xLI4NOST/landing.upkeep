@@ -5,9 +5,21 @@ const submitButton = document.querySelector('.application_form__button')
 const applicationForm = document.querySelector('.application_form')
 const phoneHover = document.querySelectorAll('.anim')
 const loading = document.querySelector('.load')
+const firstImage = document.querySelector('.first_image')
+const secondImage= document.querySelector ('.large_image_blue')
 
 
+const addAnim =()=>{
+    setTimeout(()=>{
+        firstImage.classList.add('anim2')
+        firstImage.classList.remove("aos-init")
+        firstImage.classList.remove('aos-animate')
+        firstImage.removeAttribute('data-aos')
+    }, 500)
+    
+}
 
+addAnim()
 
 let clickButton= ""
 const defaultState = ()=>{

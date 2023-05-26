@@ -387,7 +387,11 @@ a {
     right: 230px;
     top: 10px;
     z-index: 2;
-    animation: te 3s ease-in-out infinite alternate
+    
+}
+
+.anim2{
+    animation: te 03s ease-in-out infinite alternate
 }
 
 @media screen and (max-width: 1199px) {
