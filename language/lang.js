@@ -16,17 +16,18 @@ const textBlockPhone = document.querySelector('.text_block_phone')
 const textBlockBlue = document.querySelector('.text_block_blue')
 const description = document.querySelector('meta[name="description"]')
 const keyWords = document.querySelector('meta[name="keywords"]')
-console.log(keyWords)
+const footerLinks = document.querySelectorAll('.contract')
 
-let lang = navigator.language.substring(3).toLowerCase()
+const  dddd = document.querySelector('.large_block')
 
-
-console.log(navigator.language.substring(3).toLowerCase())
+let lang = navigator.language.substring(0, 2)
 
 location.href = window.location.pathname + '#' + lang
 
+console.log(lang);
+
 const changeLangUrl = () => {
-    if(lang === 'kz'){
+    if(lang === 'kz' ){
         lang= 'ru'
         langText.innerHTML= 'Қазақ тілінде'
         location.href = window.location.pathname + '#' + lang
@@ -49,28 +50,36 @@ const changeLangUrl = () => {
     }
 }
 
-const transliteTitle = (hash) =>{
-    const translationsTitle = langArr['large_block_title'][hash];
+
+export const transliteTitle = (lang) =>{
+    const translationsTitle = langArr['large_block_title'][lang];
     const count = Math.min(titels.length, translationsTitle.length);
     for(let x = 0; x < count; ++x) {
         titels[x].innerHTML = translationsTitle[x];
     }
-    const tarnslationSubtitle = langArr ['large_block_subtitle'] [hash];
+    const tarnslationSubtitle = langArr ['large_block_subtitle'] [lang];
     const countSubTitle = Math.min(titels.length, tarnslationSubtitle.length);
     for(let x = 0; x < countSubTitle; ++x) {
         subTitles[x].innerHTML = tarnslationSubtitle[x];
     }
-    const translateButtons = langArr ['large_block_button'] [hash];
+    const translateButtons = langArr ['large_block_button'] [lang];
     const buttonCount = Math.min (buttonsTl.length, translateButtons.length);
     for (let x = 0; x < buttonCount; ++x){
         buttonsTl[x].innerHTML = translateButtons[x]
     }
-    applicationTitle.innerHTML = langArr ['application_title'] [hash]
-    inputPlaceholder.placeholder = langArr ['application_input'] [hash]
-    document.documentElement.setAttribute('lang', `${hash}`)
-    document.querySelector('title').innerHTML = langArr ['title'] [hash]
-    description.content = langArr ['description'] [hash]
-    keyWords.content = langArr ['keywords'] [hash]
+    const trnansliteLinks = langArr['contract'] [lang];
+    const linkCount = Math.min(footerLinks.length, trnansliteLinks.length)
+    for(let x= 0; x<linkCount; ++x){
+        footerLinks[x].innerHTML= trnansliteLinks[x]
+    }
+
+    applicationTitle.innerHTML = langArr ['application_title'] [lang]
+    inputPlaceholder.placeholder = langArr ['application_input'] [lang]
+    document.documentElement.setAttribute('lang', `${lang}`)
+    document.querySelector('title').innerHTML = langArr ['title'] [lang]
+    description.content = langArr ['description'] [lang]
+    keyWords.content = langArr ['keywords'] [lang]
+
 }
 
 const defaultLang = (lang) =>{
@@ -89,7 +98,5 @@ const defaultLang = (lang) =>{
 
 
 defaultLang(lang)
-
-
 
 languageBlock.addEventListener('click', changeLangUrl)

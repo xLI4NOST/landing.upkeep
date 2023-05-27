@@ -391,7 +391,7 @@ a {
 }
 
 .anim2{
-    animation: te 03s ease-in-out infinite alternate
+animation: te 03s ease-in-out infinite alternate
 }
 
 @media screen and (max-width: 1199px) {
@@ -993,7 +993,7 @@ a {
     position: absolute;
     top: -200px;
     left: -250px;
-    animation: te 3s ease-in-out infinite alternate
+
 }
 
 @media screen and (max-width: 1199px) {

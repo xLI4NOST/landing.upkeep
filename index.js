@@ -1,6 +1,5 @@
 const buttons = document.querySelectorAll('.application_icon')
 const inputElem = document.querySelector('.application_input')
-const formElem = document.querySelector('.application_form')
 const submitButton = document.querySelector('.application_form__button')
 const applicationForm = document.querySelector('.application_form')
 const phoneHover = document.querySelectorAll('.anim')
@@ -9,12 +8,18 @@ const firstImage = document.querySelector('.first_image')
 const secondImage= document.querySelector ('.large_image_blue')
 
 
+
 const addAnim =()=>{
     setTimeout(()=>{
         firstImage.classList.add('anim2')
         firstImage.classList.remove("aos-init")
         firstImage.classList.remove('aos-animate')
         firstImage.removeAttribute('data-aos')
+
+        secondImage.classList.add('anim2')
+        secondImage.classList.remove("aos-init")
+        secondImage.classList.remove('aos-animate')
+        secondImage.removeAttribute('data-aos')
     }, 500)
     
 }
@@ -135,3 +140,5 @@ phoneHover.forEach((elem)=>{
 
 
 applicationForm.addEventListener('submit', handleSubmit)
+
+
