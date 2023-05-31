@@ -15,6 +15,7 @@ const krystalImg = document.querySelector('.second_double_image_bottom')
 const textBlockPhone = document.querySelector('.text_block_phone')
 const textBlockBlue = document.querySelector('.text_block_blue')
 const description = document.querySelector('meta[name="description"]')
+const ogTitle = document.querySelector('meta[property="og:title"]')
 const keyWords = document.querySelector('meta[name="keywords"]')
 const footerLinks = document.querySelectorAll('.contract')
 
@@ -23,8 +24,6 @@ const  dddd = document.querySelector('.large_block')
 let lang = navigator.language.substring(0, 2)
 
 location.href = window.location.pathname + '#' + lang
-
-console.log(lang);
 
 const changeLangUrl = () => {
     if(lang === 'kz' ){
@@ -79,7 +78,7 @@ export const transliteTitle = (lang) =>{
     document.querySelector('title').innerHTML = langArr ['title'] [lang]
     description.content = langArr ['description'] [lang]
     keyWords.content = langArr ['keywords'] [lang]
-
+    ogTitle.content= langArr ['title'] [lang]
 }
 
 
