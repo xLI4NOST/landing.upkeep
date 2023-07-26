@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3095840b-3958-4383-90c1-bf054097f5ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../2 task/fonts/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2 task/images/svg/burger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2 task/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2 task/media.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2 task/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2 task/style.sass" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../back/landing.upkeep" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../back/landing.upkeep — копия" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sddsds/dist/.idea/.gitignore" afterDir="false" />
@@ -2042,7 +2036,6 @@
       <change beforePath="$PROJECT_DIR$/../hydroshop/src/pages/SalePage/SalePage.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../hydroshop/src/pages/SalePage/SalePage.module.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hydroshop/src/redux/productsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../hydroshop/src/redux/productsReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mesto" beforeDir="false" afterPath="$PROJECT_DIR$/../mesto" afterDir="false" />
@@ -2145,7 +2138,10 @@
       <workItem from="1685199378030" duration="288000" />
       <workItem from="1685469003453" duration="1602000" />
       <workItem from="1690230576585" duration="256000" />
-      <workItem from="1690230853228" duration="635000" />
+      <workItem from="1690230853228" duration="1505000" />
+      <workItem from="1690280245032" duration="4000" />
+      <workItem from="1690280633654" duration="24000" />
+      <workItem from="1690390958970" duration="673000" />
     </task>
     <servers />
   </component>
